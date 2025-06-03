@@ -14,7 +14,4 @@ class Solution:
                 d=-1
             idx += d
 
-        for i in range(numRows):
-            rows[i] = ''.join(rows[i])
-
-        return ''.join(rows)
+        return ''.join(''.join(row) for row in rows)
